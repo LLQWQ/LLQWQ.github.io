@@ -1,207 +1,346 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LLQWQ的博客</title><meta name="author" content="LLQWQ"><meta name="copyright" content="LLQWQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="LLQWQ的博客">
+<meta property="og:url" content="http://llqwq.gitee.io/index.html">
+<meta property="og:site_name" content="LLQWQ的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://llqwq.gitee.io/img/48668845.jpg">
 <meta property="article:author" content="LLQWQ">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://llqwq.gitee.io/img/48668845.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://llqwq.gitee.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-03-25 01:26:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/48668845.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index_img.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">LLQWQ的博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">LLQWQ的博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/LLQWQ" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/LLQWQ" target="_blank" title="Gitee"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-xmind/" title="数据结构 学习笔记">     <img class="post_bg" data-lazy-src="/img/default_top.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构 学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-xmind/" title="数据结构 学习笔记">数据结构 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-04T16:00:00.000Z" title="发表于 2020-11-05 00:00:00">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E5%BE%85%E6%95%B4%E7%90%86/">待整理</a></span></div><div class="content">思维导图转markdown 待整理
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/23/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-03-23T12:09:33.733Z" itemprop="datePublished">2021-03-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/23/hello-world/">Hello World</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+大话数据结构第一章 数据结构绪论（P1）数据结构概念：数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作等相关问题的学科。
+非数值计算：早期人们认为计算机是用来计算的，所以计算机解决问题，应该是先从具体问题中抽象出一个适当的数据模型，设计出一个解决此数据模型的算法，然后再编写程序。但是现实中我们更多的不是解决数值计算的问题，而是需要一些更科学有效的手段(比如表、树和图等数据结构)的帮助，才能更好地处理问题
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+基本概念和术语 程序设计=数据结构+算法
+数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+比如MP3是声音数据，图片是图像数据。数据就是符号，这些符号必须具备两个前提
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+可以输入到计算机中
+能被计算机程序处理
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/23/hello-world/" data-id="ckmm1o04u000084u7gceefxne" data-title="Hello World" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+对于字符型数据类型就要进行非数值的处理。而声音、图片、视频等可以通过编码手段变成字符数据来处理
 
 
 
-  
+数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被成为记录
+比如在人类中人就是数据元素。人类就是数据，而人就是数据元 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/21/MQ/RabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="rabbitMQ 错误记录">     <img class="post_bg" data-lazy-src="/img/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitMQ 错误记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/21/MQ/RabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="rabbitMQ 错误记录">rabbitMQ 错误记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-20T16:00:00.000Z" title="发表于 2020-10-21 00:00:00">2020-10-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MQ/">MQ</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/MQ/rabbitMQ/">rabbitMQ</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/MQ/rabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></span></div><div class="content">Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces修改权限
+12chown rabbitmq:rabbitmq .erlang.cookiechmod 400 .erlang.cookie
 
+Error: unable to connect to node rabbit@localhost: nodedown杀进程
+12netstat -lnp | grep 25672kill -9 进程id
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+Node rabbit@vmcluster110 thinks it&#39;s clustered with node rabbit@vmcluster114, but rabbit@vmcluster114 disagrees修改主机名和hosts映射，主机名末尾不能是0。例：vmcluster110 改为vmcluster11
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/21/MQ/RabbitMQ/RabbitMQ/" title="rabbitMQ 学习笔记">     <img class="post_bg" data-lazy-src="/img/rabbitMQ-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitMQ 学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/21/MQ/RabbitMQ/RabbitMQ/" title="rabbitMQ 学习笔记">rabbitMQ 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-20T16:00:00.000Z" title="发表于 2020-10-21 00:00:00">2020-10-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MQ/">MQ</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/MQ/rabbitMQ/">rabbitMQ</a></span></div><div class="content">RabbitMQ 实战教程1.MQ引言1.1 什么是MQMQ(Message Quene) :  翻译为 消息队列,通过典型的 生产者和消费者模型,生产者不断向消息队列中生产消息，消费者不断的从队列中获取消息。因为消息的生产和消费都是异步的，而且只关心消息的发送和接收，没有业务逻辑的侵入,轻松的实现系统间解耦。别名为 消息中间件    通过利用高效可靠的消息传递机制进行平台无关的数据交流，并基于数据通信来进行分布式系统的集成。
+1.2 MQ有哪些当今市面上有很多主流的消息中间件，如老牌的ActiveMQ、RabbitMQ，炙手可热的Kafka，阿里巴巴自主开发RocketMQ等。
+1.3 不同MQ特点123456789101112131415161718# 1.ActiveMQ		ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。它是一个完全支持JMS规范的的消息中间件。丰富的API,多种集群架构模式让ActiveMQ在业界成为老牌的消息中间件,在中小型企业颇受欢迎!# 2.Kafka		Kafka是LinkedIn开源的分布式发布-订阅消息系统，目前归属于Apa ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/14/zookeeper/zookeeper/" title="zookeeper 学习笔记">     <img class="post_bg" data-lazy-src="/img/zookeeper-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="zookeeper 学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/14/zookeeper/zookeeper/" title="zookeeper 学习笔记">zookeeper 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-13T16:00:00.000Z" title="发表于 2020-08-14 00:00:00">2020-08-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/">分布式</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/zookeeper/">zookeeper</a></span></div><div class="content">一、zookeeper安装本地模式安装部署下载
+官网地址： https://zookeeper.apache.org/ 
+如果上面访问界面和下面的不同，尝试访问👉https://zookeeper.apache.org/releases.html
 
-  
-    
+下载没什么好说的，注意==要==下载到.bin的(下载打叉的)
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li></ul>
-    </div>
-  </div>
+安装将安装包上传到linux服务器上
+解压
+1tar -zxvf apache-zookeeper-3.6.1.tar.gz 
 
+将解压出来的文件夹移动到其他位置，例：
+1cp -r ./apache-zookeeper-3.6.1 /myzoopeeker/3.6.1
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/03/23/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+进入到conf目录下将zoo_sample.cfg改名为zoo.cfg
+1mv zoo_sample.cfg zoo.cfg
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 LLQWQ<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
+进入zoo.cfg，修改dataDir属性。将dataDir修改为当前zookeeper安装目录/zkData，例：dataDir=/myzookeeper/3.6.1/zkData (zkData可以写成其他的文件夹名称)
+注意：如果没有这个文件夹需要创建，刚解压出来的并不会自 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/12/MQ/ActiveMQ/activeMQ/" title="activeMQ 学习笔记">     <img class="post_bg" data-lazy-src="/img/activeMQ-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="activeMQ 学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/12/MQ/ActiveMQ/activeMQ/" title="activeMQ 学习笔记">activeMQ 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-11T16:00:00.000Z" title="发表于 2020-08-12 00:00:00">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MQ/">MQ</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/MQ/activeMQ/">activeMQ</a></span></div><div class="content">一、安装步骤
+官网http://activemq.apache.org/components/classic/download/
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+上传到linux的/opt目录下
+
+解压activemq； tar -zxvf apache-activemq-5.15.12-bin.tar.gz
+
+在根目录新建activemq文件夹，并将解压好的activemq移动到里面；cp -r apache-activemq-5.15.12 /myactivemq
+
+启动activemq；在activemq的bin目录里面启动；./activemq start
+
+查看是否启动成功；ps -ef|grep activemq|grep -v grep/ netstat -anp|grep 61616 / lsof -i:61616
+
+关闭activemq；./activemq stop
+
+带日志的启动；./activemq start &gt; /myactivemq/myrunmq.log
+
+在前台使用activemq；前台网页访问ip:8161
+
+
+二、消息生产者&amp;消费者队列（queue）生产者：1 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/23/Linux/Linux%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="Linux错误记录">     <img class="post_bg" data-lazy-src="/img/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux错误记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/23/Linux/Linux%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="Linux错误记录">Linux错误记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-22T16:00:00.000Z" title="发表于 2020-07-23 00:00:00">2020-07-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/">Linux</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></span></div><div class="content">vm虚拟机中桥接模式下虚拟机和物理机网段不同解决办法
+
+点击虚拟网络编辑器
 
 
 
-
-<script src="/js/script.js"></script>
-
+将自动改为物理机中本地网卡的名称
 
 
+修改为桥接模式
+
+在虚拟机中修改ip
+
+找到这个文件 /etc/sysconfig/network-scripts/ifcfg-网卡名
+修改BOOTPROTO属性为static，默认为dhcp
+修改IPADDR(ip地址),  PREFIX(子网掩码),  GATEWAY(网关)。将IPADDR设置成与物理主机相同网段的ip，子网掩码和网关设置成和物理主机相同的，如果没有这三个属性就添加
+重启网卡  systemctl restart network 
 
 
-  </div>
-</body>
-</html>
+
+123456789101112131415161718TYPE=&quot;Ethernet&quot;PROXY_METHOD=&quot;none&quot;BROWSER_ONLY=&quot;no&quot;BOOTPROTO=&quot;static&quot;DEFROUTE=&quot;yes&quot;IPV4_FAILURE_FATAL=&quot;no&quot;IPV6INIT=&quot; ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/05/spring-cloud/spring-cloud/" title="Spring Cloud 学习笔记">     <img class="post_bg" data-lazy-src="/img/spring-cloud-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring Cloud 学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/05/spring-cloud/spring-cloud/" title="Spring Cloud 学习笔记">Spring Cloud 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-04T16:00:00.000Z" title="发表于 2020-07-05 00:00:00">2020-07-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/spring/">spring</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/">分布式</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/spring-cloud/">spring-cloud</a></span></div><div class="content">spring-boot 官方文档
+spring-cloud 官方文档
+spring-cloud中文文档
+一、项目搭建project创建一个简单的maven项目（mavn-archetype-site）创建的过程中请使用3.5以上的maven，不要使用idea自带的
+
+设置字符编码
+注解生效激活打开enable annotation processors选项
+default里面的enable annotation processors选项也要√
+
+设置java8
+File Type 过滤【可选】将不需要看到的文件添加到下面那个框里面就好了
+
+搭建父工程pom删除src文件，因为这是父工程，不需要src文件
+pom文件1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283&lt;groupId&gt;com.ll.springclou ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/02/05/git/git%E5%91%BD%E4%BB%A4/" title="Git">     <img class="post_bg" data-lazy-src="/img/git-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/02/05/git/git%E5%91%BD%E4%BB%A4/" title="Git">Git</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-02-04T16:00:00.000Z" title="发表于 2020-02-05 00:00:00">2020-02-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/git/">git</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/">代码管理</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/git/">git</a></span></div><div class="content">git命令行操作
+git init
+
+效果：使用该命令会将此文件夹加入git进行管理，随后会在当前目录下生成一个.git隐藏文件夹，这个文件夹就是版本库，而当前目录及其子目录就是工作区。
+注意：.git文件会记录你在这个工作区中的操作，切勿删除和修改
+
+
+git add &lt;file&gt;
+
+作用：将文件从工作区提交到暂存区（就是把文件交给git管）
+注意：但此时文件并没有真正进入到版本库当中，文件目前只处于一个中间状态，如果文件没有处于暂存区的话git是不会去记录你的操作的，如果数据被删除了是无法通过git恢复的。
+
+
+git commit &lt;file&gt;
+
+作用：将暂存区文件提交到版本库中
+参数：-m &quot;&lt;message&gt;&quot; 可以不用进入vim编辑器中输入提交信息
+注意：这个命令将处于中间状态的文件（暂存区的文件）提交到版本库中,这时才算真正完成了一次提交过程。第一次提交为root（根）提交
+
+
+一般情况下这三个命令的使用顺序应该是 init -&gt; add -&gt; commit如果此时工作区中的文件发生了改动，并且希望将修改 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/02/05/spring-boot/%E9%94%99%E8%AF%AF%E6%95%B4%E7%90%86/" title="Spring-Boot 错误记录">     <img class="post_bg" data-lazy-src="/img/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring-Boot 错误记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/02/05/spring-boot/%E9%94%99%E8%AF%AF%E6%95%B4%E7%90%86/" title="Spring-Boot 错误记录">Spring-Boot 错误记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-02-04T16:00:00.000Z" title="发表于 2020-02-05 00:00:00">2020-02-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/spring/">spring</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/spring-boot/">spring-boot</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></span></div><div class="content">无法通过 params 给映射对象中的 Map 类型传值
+版本：
+
+spring-boot：2.2.13RELEASE
+
+
+问题描述：
+无法直接在路径地址后面拼接参数给映射对象中map属性传值
+例：http://localhost:8080/list?id=1&amp;role.id=1&amp;map.a=2
+在这个例子中Entity类中的map无法被正确的映射值，但是 role.id 却可以映射到值
+猜测是 路径中的 map.a 无法被映射到正确的类型所以boot就没有对map进行映射，map.a=2 中的 2 可能是 string 也可能是 int 类型
+entity：
+12345678910111213141516171819202122232425262728293031// ------Role.javapublic class Role&#123;    private String id;&#125;// ------Entity.javapublic class Entity&#123;    private String id;    private Role ro ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/01/05/spring-boot/spring-boot/" title="spring boot 学习笔记">     <img class="post_bg" data-lazy-src="/img/Spring-Boot.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spring boot 学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/01/05/spring-boot/spring-boot/" title="spring boot 学习笔记">spring boot 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-01-04T16:00:00.000Z" title="发表于 2020-01-05 00:00:00">2020-01-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/spring/">spring</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/spring-boot/">spring-boot</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a></span></div><div class="content">官网spring.io
+是什么？
+  Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can “just run”.
+  We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need minimal Spring configuration.
+
+使用Spring Boot可以轻松地创建独立的，基于生产级别的Spring的应用程序，您可以“运行”它们。
+我们对Spring平台和第三方库有默认的设置，这样您就可以从零开始。大多数Spring引导应用程序只需要最小的Spring配置。
+怎么下？使用maven创建一个简单的maven项目在pom文件中添加如下依赖
+1234567891011121314 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/48668845.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">LLQWQ</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LLQWQ"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/LLQWQ" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/LLQWQ" target="_blank" title="Gitee"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-xmind/" title="数据结构 学习笔记"><img data-lazy-src="/img/default_top.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构 学习笔记"/></a><div class="content"><a class="title" href="/2020/11/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-xmind/" title="数据结构 学习笔记">数据结构 学习笔记</a><time datetime="2020-11-04T16:00:00.000Z" title="发表于 2020-11-05 00:00:00">2020-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/21/MQ/RabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="rabbitMQ 错误记录"><img data-lazy-src="/img/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitMQ 错误记录"/></a><div class="content"><a class="title" href="/2020/10/21/MQ/RabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="rabbitMQ 错误记录">rabbitMQ 错误记录</a><time datetime="2020-10-20T16:00:00.000Z" title="发表于 2020-10-21 00:00:00">2020-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/21/MQ/RabbitMQ/RabbitMQ/" title="rabbitMQ 学习笔记"><img data-lazy-src="/img/rabbitMQ-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitMQ 学习笔记"/></a><div class="content"><a class="title" href="/2020/10/21/MQ/RabbitMQ/RabbitMQ/" title="rabbitMQ 学习笔记">rabbitMQ 学习笔记</a><time datetime="2020-10-20T16:00:00.000Z" title="发表于 2020-10-21 00:00:00">2020-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/14/zookeeper/zookeeper/" title="zookeeper 学习笔记"><img data-lazy-src="/img/zookeeper-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="zookeeper 学习笔记"/></a><div class="content"><a class="title" href="/2020/08/14/zookeeper/zookeeper/" title="zookeeper 学习笔记">zookeeper 学习笔记</a><time datetime="2020-08-13T16:00:00.000Z" title="发表于 2020-08-14 00:00:00">2020-08-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/12/MQ/ActiveMQ/activeMQ/" title="activeMQ 学习笔记"><img data-lazy-src="/img/activeMQ-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="activeMQ 学习笔记"/></a><div class="content"><a class="title" href="/2020/08/12/MQ/ActiveMQ/activeMQ/" title="activeMQ 学习笔记">activeMQ 学习笔记</a><time datetime="2020-08-11T16:00:00.000Z" title="发表于 2020-08-12 00:00:00">2020-08-12</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/IDE/"><span class="card-category-list-name">IDE</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/IDE/idea/"><span class="card-category-list-name">idea</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/IDE/idea/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">错误记录</span><span class="card-category-list-count">1</span></a></li></ul></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MQ/"><span class="card-category-list-name">MQ</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MQ/activeMQ/"><span class="card-category-list-name">activeMQ</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MQ/rabbitMQ/"><span class="card-category-list-name">rabbitMQ</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MQ/rabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">错误记录</span><span class="card-category-list-count">1</span></a></li></ul></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">3</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/IDE/" style="font-size: 1.23em; color: #999ea6">IDE</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/MQ/" style="font-size: 1.37em; color: #99a4b2">MQ</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/activeMQ/" style="font-size: 1.1em; color: #999">activeMQ</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/idea/" style="font-size: 1.23em; color: #999ea6">idea</a> <a href="/tags/java/" style="font-size: 1.37em; color: #99a4b2">java</a> <a href="/tags/rabbitMQ/" style="font-size: 1.23em; color: #999ea6">rabbitMQ</a> <a href="/tags/spring-boot/" style="font-size: 1.23em; color: #999ea6">spring-boot</a> <a href="/tags/spring-cloud/" style="font-size: 1.1em; color: #999">spring-cloud</a> <a href="/tags/zookeeper/" style="font-size: 1.1em; color: #999">zookeeper</a> <a href="/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/" style="font-size: 1.1em; color: #999">代码管理</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.23em; color: #999ea6">分布式</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 1.37em; color: #99a4b2">开发工具</a> <a href="/tags/%E5%BE%85%E6%95%B4%E7%90%86/" style="font-size: 1.23em; color: #999ea6">待整理</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">操作系统</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.1em; color: #999">数据结构</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.37em; color: #99a4b2">框架</a> <a href="/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" style="font-size: 1.5em; color: #99a9bf">错误记录</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">2020 十一月</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">2020 十月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">2020 八月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">2020 七月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/02/"><span class="card-archive-list-date">2020 二月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/01/"><span class="card-archive-list-date">2020 一月</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/09/"><span class="card-archive-list-date">2019 九月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/08/"><span class="card-archive-list-date">2019 八月</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">13</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-03-24T17:26:03.040Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By LLQWQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欸嘿( •̀ ω •́ )✧</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        var from = '出自 ' + data.from
+        var sub = "".length == 0 ? new Array() : "".split(',')
+        var both = sub.unshift(data.hitokoto, from)
+        var typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>idea基础配置 | LLQWQ的博客</title><meta name="keywords" content="开发工具,idea,IDE"><meta name="author" content="LLQWQ"><meta name="copyright" content="LLQWQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、idea安装启动略 二、idea配置idea虚拟机配置12345678910111213-Xms128m # 初始内存数-Xmx750m # 最大内存数-XX:ReservedCodeCacheSize&#x3D;240m # 保留代码缓存大小-XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB&#x3D;50-ea-Dsun.io.useCa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="idea基础配置">
+<meta property="og:url" content="http://llqwq.gitee.io/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/index.html">
+<meta property="og:site_name" content="LLQWQ的博客">
+<meta property="og:description" content="一、idea安装启动略 二、idea配置idea虚拟机配置12345678910111213-Xms128m # 初始内存数-Xmx750m # 最大内存数-XX:ReservedCodeCacheSize&#x3D;240m # 保留代码缓存大小-XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB&#x3D;50-ea-Dsun.io.useCa">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://llqwq.gitee.io/img/idea-cover.jpg">
+<meta property="article:published_time" content="2019-08-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-24T17:18:58.034Z">
+<meta property="article:author" content="LLQWQ">
+<meta property="article:tag" content="开发工具">
+<meta property="article:tag" content="idea">
+<meta property="article:tag" content="IDE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://llqwq.gitee.io/img/idea-cover.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://llqwq.gitee.io/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-25 01:18:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/48668845.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/idea.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">LLQWQ的博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">idea基础配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-08-13T16:00:00.000Z" title="发表于 2019-08-14 00:00:00">2019-08-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-24T17:18:58.034Z" title="更新于 2021-03-25 01:18:58">2021-03-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/idea/">idea</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/IDE/">IDE</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/IDE/idea/">idea</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="idea基础配置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="一、idea安装启动"><a href="#一、idea安装启动" class="headerlink" title="一、idea安装启动"></a>一、idea安装启动</h1><p>略</p>
+<h1 id="二、idea配置"><a href="#二、idea配置" class="headerlink" title="二、idea配置"></a>二、idea配置</h1><h2 id="idea虚拟机配置"><a href="#idea虚拟机配置" class="headerlink" title="idea虚拟机配置"></a>idea虚拟机配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">-Xms128m # 初始内存数</span><br><span class="line">-Xmx750m # 最大内存数</span><br><span class="line">-XX:ReservedCodeCacheSize&#x3D;240m # 保留代码缓存大小</span><br><span class="line">-XX:+UseConcMarkSweepGC </span><br><span class="line">-XX:SoftRefLRUPolicyMSPerMB&#x3D;50</span><br><span class="line">-ea</span><br><span class="line">-Dsun.io.useCanonCaches&#x3D;false</span><br><span class="line">-Djava.net.preferIPv4Stack&#x3D;true</span><br><span class="line">-Djdk.http.auth.tunneling.disabledSchemes&#x3D;&quot;&quot;</span><br><span class="line">-XX:+HeapDumpOnOutOfMemoryError</span><br><span class="line">-XX:-OmitStackTraceInFastThrow</span><br><span class="line">-javaagent:D:\downloads\Learning\JetBrains\IntelliJ IDEA 2018.2.5\bin\JetbrainsCrack-release-enc.jar</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="idea界面设置"><a href="#idea界面设置" class="headerlink" title="idea界面设置"></a>idea界面设置</h2><p>打开工具视图</p>
+<p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609161002504.png" alt="image-20200609161002504"></p>
+<h3 id="设置悬浮提示"><a href="#设置悬浮提示" class="headerlink" title="设置悬浮提示"></a>设置悬浮提示</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609164301178.png" alt="image-20200609164301178"></p>
+<h3 id="设置自动导包"><a href="#设置自动导包" class="headerlink" title="设置自动导包"></a>设置自动导包</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609164402862.png" alt="image-20200609164402862"></p>
+<h3 id="设置方法之间的分割线"><a href="#设置方法之间的分割线" class="headerlink" title="设置方法之间的分割线"></a>设置方法之间的分割线</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609164554935.png" alt="image-20200609164554935"></p>
+<h3 id="设置忽略大小写提示"><a href="#设置忽略大小写提示" class="headerlink" title="设置忽略大小写提示"></a>设置忽略大小写提示</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609164842973.png" alt="image-20200609164842973"></p>
+<h3 id="设置tab过多时不隐藏"><a href="#设置tab过多时不隐藏" class="headerlink" title="设置tab过多时不隐藏"></a>设置tab过多时不隐藏</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609165101396.png" alt="image-20200609165101396"></p>
+<h3 id="设置文件头部信息"><a href="#设置文件头部信息" class="headerlink" title="设置文件头部信息"></a>设置文件头部信息</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609165614802.png" alt="image-20200609165614802">                                                                                             </p>
+<h3 id="开启自动编译"><a href="#开启自动编译" class="headerlink" title="开启自动编译"></a>开启自动编译</h3><p><img src= "/img/loading.gif" data-lazy-src="/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/image-20200609181519729.png" alt="image-20200609181519729"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">LLQWQ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://llqwq.gitee.io/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/">http://llqwq.gitee.io/2019/08/14/idea/idea%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://llqwq.gitee.io" target="_blank">LLQWQ的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a><a class="post-meta__tags" href="/tags/idea/">idea</a><a class="post-meta__tags" href="/tags/IDE/">IDE</a></div><div class="post_share"><div class="social-share" data-image="/img/idea-cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2019/09/05/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/MySQL/"><img class="prev-cover" data-lazy-src="/img/db-cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MySQL 学习笔记</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2019/09/15/idea/错误解决/" title="idea错误记录"><img class="cover" data-lazy-src="/img/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-09-15</div><div class="title">idea错误记录</div></div></a></div><div><a href="/2020/02/05/git/git命令/" title="Git"><img class="cover" data-lazy-src="/img/git-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-02-05</div><div class="title">Git</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/48668845.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">LLQWQ</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LLQWQ"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/LLQWQ" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/LLQWQ" target="_blank" title="Gitee"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81idea%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8"><span class="toc-number">1.</span> <span class="toc-text">一、idea安装启动</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81idea%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">二、idea配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#idea%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">idea虚拟机配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#idea%E7%95%8C%E9%9D%A2%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">idea界面设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%82%AC%E6%B5%AE%E6%8F%90%E7%A4%BA"><span class="toc-number">2.2.1.</span> <span class="toc-text">设置悬浮提示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%8C%85"><span class="toc-number">2.2.2.</span> <span class="toc-text">设置自动导包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">2.2.3.</span> <span class="toc-text">设置方法之间的分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99%E6%8F%90%E7%A4%BA"><span class="toc-number">2.2.4.</span> <span class="toc-text">设置忽略大小写提示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEtab%E8%BF%87%E5%A4%9A%E6%97%B6%E4%B8%8D%E9%9A%90%E8%97%8F"><span class="toc-number">2.2.5.</span> <span class="toc-text">设置tab过多时不隐藏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF"><span class="toc-number">2.2.6.</span> <span class="toc-text">设置文件头部信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91"><span class="toc-number">2.2.7.</span> <span class="toc-text">开启自动编译</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-xmind/" title="数据结构 学习笔记"><img data-lazy-src="/img/default_top.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构 学习笔记"/></a><div class="content"><a class="title" href="/2020/11/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-xmind/" title="数据结构 学习笔记">数据结构 学习笔记</a><time datetime="2020-11-04T16:00:00.000Z" title="发表于 2020-11-05 00:00:00">2020-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/21/MQ/RabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="rabbitMQ 错误记录"><img data-lazy-src="/img/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitMQ 错误记录"/></a><div class="content"><a class="title" href="/2020/10/21/MQ/RabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" title="rabbitMQ 错误记录">rabbitMQ 错误记录</a><time datetime="2020-10-20T16:00:00.000Z" title="发表于 2020-10-21 00:00:00">2020-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/21/MQ/RabbitMQ/RabbitMQ/" title="rabbitMQ 学习笔记"><img data-lazy-src="/img/rabbitMQ-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitMQ 学习笔记"/></a><div class="content"><a class="title" href="/2020/10/21/MQ/RabbitMQ/RabbitMQ/" title="rabbitMQ 学习笔记">rabbitMQ 学习笔记</a><time datetime="2020-10-20T16:00:00.000Z" title="发表于 2020-10-21 00:00:00">2020-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/14/zookeeper/zookeeper/" title="zookeeper 学习笔记"><img data-lazy-src="/img/zookeeper-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="zookeeper 学习笔记"/></a><div class="content"><a class="title" href="/2020/08/14/zookeeper/zookeeper/" title="zookeeper 学习笔记">zookeeper 学习笔记</a><time datetime="2020-08-13T16:00:00.000Z" title="发表于 2020-08-14 00:00:00">2020-08-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/12/MQ/ActiveMQ/activeMQ/" title="activeMQ 学习笔记"><img data-lazy-src="/img/activeMQ-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="activeMQ 学习笔记"/></a><div class="content"><a class="title" href="/2020/08/12/MQ/ActiveMQ/activeMQ/" title="activeMQ 学习笔记">activeMQ 学习笔记</a><time datetime="2020-08-11T16:00:00.000Z" title="发表于 2020-08-12 00:00:00">2020-08-12</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By LLQWQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欸嘿( •̀ ω •́ )✧</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

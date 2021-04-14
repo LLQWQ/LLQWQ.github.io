@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://llqwq.gitee.io/sitemap.xml
-Sitemap: http://llqwq.gitee.io/baidusitemap.xml
+Sitemap: https://llqwq.gitee.io/sitemap.xml
+Sitemap: https://llqwq.gitee.io/baidusitemap.xml

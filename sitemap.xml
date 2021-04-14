@@ -314,13 +314,6 @@
   </url>
   
   <url>
-    <loc>http://llqwq.gitee.io/categories/java/</loc>
-    <lastmod>2021-04-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://llqwq.gitee.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/git/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
@@ -336,13 +329,6 @@
   
   <url>
     <loc>http://llqwq.gitee.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2021-04-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://llqwq.gitee.io/categories/java/spring/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -370,13 +356,6 @@
   </url>
   
   <url>
-    <loc>http://llqwq.gitee.io/categories/java/spring-boot/</loc>
-    <lastmod>2021-04-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://llqwq.gitee.io/categories/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/git/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
@@ -391,13 +370,6 @@
   </url>
   
   <url>
-    <loc>http://llqwq.gitee.io/categories/%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2021-04-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://llqwq.gitee.io/categories/IDE/idea/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
@@ -405,7 +377,7 @@
   </url>
   
   <url>
-    <loc>http://llqwq.gitee.io/categories/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://llqwq.gitee.io/categories/java/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -426,6 +398,13 @@
   </url>
   
   <url>
+    <loc>http://llqwq.gitee.io/categories/java/spring/</loc>
+    <lastmod>2021-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://llqwq.gitee.io/categories/MQ/rabbitMQ/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
@@ -440,7 +419,28 @@
   </url>
   
   <url>
+    <loc>http://llqwq.gitee.io/categories/java/spring-boot/</loc>
+    <lastmod>2021-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://llqwq.gitee.io/categories/MQ/rabbitMQ/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://llqwq.gitee.io/categories/%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2021-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://llqwq.gitee.io/categories/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2021-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

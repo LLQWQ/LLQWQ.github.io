@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>rabbitMQ 学习笔记 | LLQWQ的博客</title><meta name="keywords" content="MQ,rabbitMQ"><meta name="author" content="LLQWQ"><meta name="copyright" content="LLQWQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="RabbitMQ 实战教程1.MQ引言1.1 什么是MQMQ(Message Quene) :  翻译为 消息队列,通过典型的 生产者和消费者模型,生产者不断向消息队列中生产消息，消费者不断的从队列中获取消息。因为消息的生产和消费都是异步的，而且只关心消息的发送和接收，没有业务逻辑的侵入,轻松的实现系统间解耦。别名为 消息中间件    通过利用高效可靠的消息传递机制进行平台无关的数据交流，并基于数">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta name="baidu-site-verification" content="code-mYFXUn9LOL"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>rabbitMQ 学习笔记 | LLQWQ的博客</title><meta name="keywords" content="MQ,rabbitMQ"><meta name="author" content="LLQWQ"><meta name="copyright" content="LLQWQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="RabbitMQ 实战教程1.MQ引言1.1 什么是MQMQ(Message Quene) :  翻译为 消息队列,通过典型的 生产者和消费者模型,生产者不断向消息队列中生产消息，消费者不断的从队列中获取消息。因为消息的生产和消费都是异步的，而且只关心消息的发送和接收，没有业务逻辑的侵入,轻松的实现系统间解耦。别名为 消息中间件    通过利用高效可靠的消息传递机制进行平台无关的数据交流，并基于数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="rabbitMQ 学习笔记">
 <meta property="og:url" content="http://llqwq.gitee.io/2020/10/21/MQ/RabbitMQ/RabbitMQ/index.html">
@@ -516,20 +516,14 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
       enableQQ: true,
       path: window.location.pathname,
       requiredFields: ["nick,mail"],
-      visitor: true,
-      master: ["16fd709939378e7bc4eff9a9f113faa2","b62ea363b14f31f629fb9afd6053ebf9"],
-      friends: ["a4cd642fdb16ff1418fb6305b89cc288","0fe71a9c1488d7d38e0df8e289157de1"],
-      tagMeta: ["博主","小伙伴","访客"],
-      metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）"},
-      verify: true
+      visitor: true
     }, null))
   }
 
-  if (typeof Valine === 'function') initValine()
-  else {
-    getScript('https://cdn.jsdelivr.net/gh/LLQWQ/Valine/dist/Valine.min.js').then(initValine)
-  }
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/LLQWQ/Valine/dist/Valine.min.js').then(initValine)
 }
+
 if ('Valine' === 'Valine' || !false) {
   if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
   else setTimeout(loadValine, 0)
@@ -537,8 +531,7 @@ if ('Valine' === 'Valine' || !false) {
   function loadOtherComment () {
     loadValine()
   }
-}
-</script><!-- valine css--><link rel="stylesheet" href="/css/valine.css"/><script>function addGitalkSource () {
+}</script><script>function addGitalkSource () {
   const ele = document.createElement('link')
   ele.rel = 'stylesheet'
   ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'

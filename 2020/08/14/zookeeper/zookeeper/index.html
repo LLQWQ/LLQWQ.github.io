@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>zookeeper 学习笔记 | LLQWQ的博客</title><meta name="keywords" content="分布式,zookeeper"><meta name="author" content="LLQWQ"><meta name="copyright" content="LLQWQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、zookeeper安装本地模式安装部署下载 官网地址： https:&#x2F;&#x2F;zookeeper.apache.org&#x2F;  如果上面访问界面和下面的不同，尝试访问👉https:&#x2F;&#x2F;zookeeper.apache.org&#x2F;releases.html  下载没什么好说的，注意&#x3D;&#x3D;要&#x3D;&#x3D;下载到.bin的(下载打叉的)  安装将安装包上传到linux服务器上 解压 1tar -zxvf apache-z">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta name="baidu-site-verification" content="code-mYFXUn9LOL"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>zookeeper 学习笔记 | LLQWQ的博客</title><meta name="keywords" content="分布式,zookeeper"><meta name="author" content="LLQWQ"><meta name="copyright" content="LLQWQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、zookeeper安装本地模式安装部署下载 官网地址： https:&#x2F;&#x2F;zookeeper.apache.org&#x2F;  如果上面访问界面和下面的不同，尝试访问👉https:&#x2F;&#x2F;zookeeper.apache.org&#x2F;releases.html  下载没什么好说的，注意&#x3D;&#x3D;要&#x3D;&#x3D;下载到.bin的(下载打叉的)  安装将安装包上传到linux服务器上 解压 1tar -zxvf apache-z">
 <meta property="og:type" content="article">
 <meta property="og:title" content="zookeeper 学习笔记">
 <meta property="og:url" content="http://llqwq.gitee.io/2020/08/14/zookeeper/zookeeper/index.html">
@@ -470,20 +470,14 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
       enableQQ: true,
       path: window.location.pathname,
       requiredFields: ["nick,mail"],
-      visitor: true,
-      master: ["16fd709939378e7bc4eff9a9f113faa2","b62ea363b14f31f629fb9afd6053ebf9"],
-      friends: ["a4cd642fdb16ff1418fb6305b89cc288","0fe71a9c1488d7d38e0df8e289157de1"],
-      tagMeta: ["博主","小伙伴","访客"],
-      metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）"},
-      verify: true
+      visitor: true
     }, null))
   }
 
-  if (typeof Valine === 'function') initValine()
-  else {
-    getScript('https://cdn.jsdelivr.net/gh/LLQWQ/Valine/dist/Valine.min.js').then(initValine)
-  }
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/LLQWQ/Valine/dist/Valine.min.js').then(initValine)
 }
+
 if ('Valine' === 'Valine' || !false) {
   if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
   else setTimeout(loadValine, 0)
@@ -491,8 +485,7 @@ if ('Valine' === 'Valine' || !false) {
   function loadOtherComment () {
     loadValine()
   }
-}
-</script><!-- valine css--><link rel="stylesheet" href="/css/valine.css"/><script>function addGitalkSource () {
+}</script><script>function addGitalkSource () {
   const ele = document.createElement('link')
   ele.rel = 'stylesheet'
   ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'

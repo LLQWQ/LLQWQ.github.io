@@ -12,7 +12,7 @@
   display: none;
 }
 
-#vcomment .vheader .vnick {
+/*#vcomment .vheader .vnick {
 	width: 30%;
 	border: 2px solid #dedede;
 	padding-left: 10px;
@@ -36,7 +36,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 5px;
-}
+}*/
 
 #vcomment .vcards .vcard {
 	padding: 15px 20px 0 20px;
